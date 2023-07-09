@@ -67,6 +67,35 @@ body {
     animation-fill-mode: forwards;
   }
 
+  .nav-link2 {
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #672f2f;
+}
+
+.nav-link2::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #672f2f;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .nav-link2:hover::after {
+    opacity: 1;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
   @keyframes slidein {
     from {
       width: 0;
@@ -262,6 +291,12 @@ body {
     color: #fff;
   }
   
+  .CV1 {
+    color: #4d2323;
+    text-decoration: none;
+    line-height: 45px;
+  }
+
   .github {
     color: #fff;
     text-decoration: none;
